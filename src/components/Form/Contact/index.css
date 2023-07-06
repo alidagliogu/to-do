@@ -1,0 +1,73 @@
+h1{
+    color: pink;
+    font-weight: 800;
+    font-size: 60px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"]{
+    outline:1px solid pink;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 250px;
+    border: none;
+}
+input::placeholder{
+    color: lightgray;
+    font-style: italic;
+    font-weight: 800;
+}
+
+button.add{
+    border: 1px solid lightblue;
+    background-color: rgba(173, 216, 230, 0.466);
+    border-radius: 50px;
+    padding: 10px 25px;
+    color: black;
+    font-style: italic;
+    font-weight: 800;
+
+}
+button.add:active{
+    background-color: lightblue;
+    transition: 0.2s linear;
+}
+ul{
+    list-style: none;
+    border: 1px solid black;
+    border-bottom: none;
+    width: 60%;
+    padding: 0;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+button.delete{
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.808);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+button.delete:active{
+    background-color: red;
+}
+input[type="checkbox"]:checked ~ .contacts{
+    text-decoration: line-through;
+}
+.contacts{
+    margin: 0;
+}
